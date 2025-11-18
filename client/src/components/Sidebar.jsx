@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { useAppContext } from '../context/AppContext';
+import { useAppContext } from '../context/AppContext.js';
 import { assets } from '../assets/assets';
 import moment from 'moment';
+import { useNavigate } from 'react-router-dom';
 const Sidebar = ({isMenuopen , setIsMenuopen}) => {
   const {chat, setSelectedChat, theme, setTheme, user, navigate} = useAppContext();
   const [search, setSearch] = useState('');
